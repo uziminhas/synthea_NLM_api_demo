@@ -17,6 +17,15 @@ My Python program used Pandas to read the medications.csv file and create a Data
 
 As a result, my program yielded a total count of 402 drug interactions for the sample set.
 
+## Summary of assumptions / questions
+1) Only assuming drug-to-drug interactions. Drug interactions may occur for other reasons.
+2) "CODE" column in medicines.csv represented the RxNorm code/identifier.
+3) Assumed that drug interactions could only occur for medications that were currently in use (i.e. no end/stop end date recorded). 
+
+# TODO: Summary of future modifications
+1) Reduce search cost for "fullInteractionTypeGroup" attribute in JSON output from API call.
+2) Removing duplicate instances of medications for data cleaning. Although duplicates appear to have no impact on the determination of whether the drugs cause interactions with each other.
+
 ## Creating a virtual environment and installing dependencies (MacOS/Linux)
 
 Unzip the cloned repository and navigate into the root directory.
