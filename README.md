@@ -22,7 +22,7 @@ As a result, my program yielded a total count of 402 drug interactions for the s
 2) "CODE" column in medicines.csv represented the RxNorm code/identifier.
 3) Assumed that drug interactions could only occur for medications that were currently in use (i.e. no end/stop end date recorded). 
 
-# TODO: Summary of future modifications
+## TODO: Summary of future modifications
 1) Reduce search cost for "fullInteractionTypeGroup" attribute in JSON output from API call.
 2) Removing duplicate instances of medications for data cleaning. Although duplicates appear to have no impact on the determination of whether the drugs cause interactions with each other.
 
