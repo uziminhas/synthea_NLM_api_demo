@@ -17,20 +17,29 @@ My Python program included reading the medications.csv file with Pandas and crea
 
 My program yielded a total count of 402 drug interactions for the sample set.
 
-## List of assumptions
+## Creating a virtual environment and installing dependencies (MacOS/Linux)
 
-In the medications.csv file:
-1) Assumed the "CODE" column represented the RxNorm code used to encode medications.
+Unzip the cloned repository and navigate into the root directory.
 
-## Installing
+First, create a virtual environment. Virtual environments allow you to manage separate package installations for different projects. They create a “virtual” isolated Python installation and allow for easy installation of packages into that virtual installation. Run the following command to create a virtual environment:
+``
+$ python3 -m venv env
+``
 
-Install requests via the command line:
+Activate a virtual environment:
+``
+source env/bin/activate
+``
+
+Install the required packages:
 ``
 $ pip install requests
-``
-
-Install pandas via the command line:
-``
 $ pip install pandas
+``
+## Running the application (MacOS/Linux)
+
+After the packages have been installed in the virtual environment, run the application:
+``
+$ python interactions.py
 ``
 
