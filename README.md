@@ -13,9 +13,9 @@ I decided on using Python (via the PyCharm IDE) to develop my application, given
 - Pandas (v0.24.2)
 - Json (Python Standard Library)
 
-My Python program included reading the medications.csv file with Pandas and creating a DataFrame object. I trimmed this DataFrame to include only the columns associated with "START", "STOP", "PATIENT", and "CODE". Then, I excluded medication rows where the medication had "NaN" in its "START" column (based on the assumption made earlier to only consider "current" drug interactions). Next, I used the "groupby" function in conjunction with "apply" to create lists of drugs for each unique patient ID. I iterated through the drug list for each patient and concatenated each drug code with a "+" sign, to pass as a parameter to the GET API call. For each concatenated drug list, I called my customized API function and performed a search for the attribute "fullInteractionTypeGroup", incrementing a counter if this attribute appeared in the JSON onput for each API call.
+My Python program used Pandas to read the medications.csv file and create a DataFrame object. I trimmed this DataFrame to include only the columns associated with "START", "STOP", "PATIENT", and "CODE". Then, I excluded medication rows where the medication had "NaN" in its "START" column (based on the assumption made earlier to only consider "current" drug interactions). Next, I used Pandas' "groupby" function in conjunction with "apply" to create lists of drugs for each unique patient ID. I iterated through the drug list for each patient and concatenated each drug code with a "+" sign, to create a concatenated drug list to pass as a parameter to the GET API call. For each concatenated drug list, I called my customized API function and performed a search for the attribute "fullInteractionTypeGroup", incrementing a counter if this attribute appeared in the JSON onput for each API call.
 
-My program yielded a total count of 402 drug interactions for the sample set.
+As a result, my program yielded a total count of 402 drug interactions for the sample set.
 
 ## Creating a virtual environment and installing dependencies (MacOS/Linux)
 
