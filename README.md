@@ -37,6 +37,7 @@ Install the required packages:
 
 ``
 $ pip install requests
+
 $ pip install pandas
 ``
 ## Running the application (MacOS/Linux)
