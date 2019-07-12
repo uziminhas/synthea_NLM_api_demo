@@ -30,7 +30,7 @@ $ python3 -m venv env
 Activate a virtual environment:
 
 ``
-source env/bin/activate
+$ source env/bin/activate
 ``
 
 Install the required packages:
